@@ -1,38 +1,48 @@
+/* Color Platte
+gray: rgb(233,234,236);
+ivory (container): rgb(238,237,231); 
+
+*/
+
+:root{
+  --gray: rgb(233,234,236);
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* global */
+h1{
+  margin: 10px;
+  color: var(--gray);
+  font-size: 3rem;
+}
+h3{
+  text-align: left;
+  margin: 25px 0 5px;
+  color: #747474;
+}
+
 .App {
-  text-align: center;
+  height: 100vh;
+  overflow-y: hidden;
+  margin: 0 20px;
+  /* background-color: #D5C1B9; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
+  margin: auto;
+  width: 90vw;
+  height: 85vh;
+  padding: 0px 30px 30px;
+  background-color: rgb(238,237,231, .5);
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  box-shadow: -3px -2px 5px var(--gray);
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.test{
+  overflow-y: scroll;
 }

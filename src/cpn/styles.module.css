@@ -1,0 +1,57 @@
+.container{
+    border-radius: 20px;
+    overflow-y: scroll;
+    height: 70vh;
+    position: relative;
+}
+.container::-webkit-scrollbar{
+    display: none;
+}
+
+.flex {
+    display: flex;
+}
+.titleContainer{
+    position: sticky;
+    top: 0;
+    
+    
+}
+.title{
+    background-color:#ff8fab;
+    color: white;
+    padding:5px 10px;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+.cellContainer{
+    background-color: rgb(233,234,236);
+}
+
+.cell{
+    flex: 0 1 auto;
+}
+
+.cell:first-child {
+    flex-basis: 50%;
+}
+
+.cell:nth-child(2){
+    flex-basis: 40%;
+}
+
+.cell:nth-child(3){
+    flex-grow: 1;
+}
+.topicsRow{
+    margin: auto;
+    width: 95%;
+}
+.topics{
+    padding: 10px;
+    border-bottom: 1px black dotted;
+
+}

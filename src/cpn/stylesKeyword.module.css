@@ -1,0 +1,85 @@
+.keywordContainer{
+  background-color: rgb(233,234,236);
+  max-height: 40vh;
+  overflow-y: scroll;
+  position: relative;
+  border-radius: 20px;
+}
+
+.keywordContainer::-webkit-scrollbar{
+  display: none;
+}
+
+/*
+toggleList
+*/
+.toggleList{
+  padding: 5px 0;
+  overflow-x: scroll;
+  text-wrap: nowrap;
+  
+  background-color: rgb(233,234,236);
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+.toggleList::-webkit-scrollbar {
+  display: none;
+}
+
+/* button */
+button{
+  background-color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 20px;
+  margin: 8px 5px;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 0px 0px, rgba(45, 35, 66, 0.3) 0 0px 0px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+
+.button:focus {
+  background:rgb(243, 145, 161);
+  color: white;
+}
+
+.button:hover {
+  /* box-shadow: rgba(45, 35, 66, 0.4) 0 0px 0px, rgba(45, 35, 66, 0.3) 0 17px 20px -3px, #D6D6E7 0 -3px 0 inset; */
+  transform: translateY(-7px);
+}
+
+.button:active {
+  background: #914955;
+  /* box-shadow: #914955 0 13px 17px inset; */
+  transform: translateY(2px);
+}
+
+/* topic list */
+.hide{
+  height: 0;
+  transition: height .5s ease;
+}
+.trainsition{
+  height: 0;
+  transition: height 1s ease;
+}
+.show{
+  height: 100vh;
+  transition: height .5s ease;
+}
+
+.topic{
+  padding: 10px;
+  width: 90%;
+  margin: auto;
+  border-bottom: black 1px dotted;
+}
+
+
+
+
+
+
+
